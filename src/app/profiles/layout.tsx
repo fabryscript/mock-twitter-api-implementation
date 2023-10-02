@@ -1,6 +1,10 @@
-import Navigation from "@/components/Navigation";
-import "../globals.css";
+import { Suspense } from "react";
 import type { Metadata } from "next";
+
+import Navigation from "@/components/Navigation";
+import Loading from "./loading";
+
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +26,7 @@ export default function RootLayout({
           <Navigation routes={routes} />
         </div>
       </div>
-      {children}
+      <Suspense fallback={<Loading />}>{children}</Suspense>
     </div>
   );
 }
