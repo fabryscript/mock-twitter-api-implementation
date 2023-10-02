@@ -8,6 +8,15 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+@layer base {
+  .activelink {
+    @apply border-blue-600 text-blue-500;
+  }
+  .unactivelink {
+    @apply border-gray-300 text-gray-300;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
