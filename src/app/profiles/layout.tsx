@@ -15,7 +15,7 @@ export default function RootLayout({
   const routes = ["nabla_hq", "osmosiszone", "GenshinImpact"];
 
   return (
-    <div className="">
+    <div>
       <div className="flex flex-col items-center gap-1 p-4">
         <h1 className="text-3xl font-bold">X Mock API with caching</h1>
         <div className="border-b border-gray-700 text-center text-sm font-medium text-gray-400">
