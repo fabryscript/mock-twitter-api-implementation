@@ -14,7 +14,7 @@ function Navigation({ routes }: { routes: string[] }) {
             href={`/profiles/${route}`}
             className={`${
               route === pathname ? "activelink" : "unactivelink"
-            } hover:activelink inline-block rounded-t-lg border-b-2 border-transparent p-4`}
+            } hover:activelink inline-block rounded-t-lg border-b-2 border-transparent p-4 transition-all duration-300`}
           >
             @{route}
           </Link>
