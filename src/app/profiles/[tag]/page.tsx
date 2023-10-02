@@ -1,7 +1,7 @@
 import Tweet from "@/components/Tweet";
 import React from "react";
 
-const getTodos = async (handle: string) => {
+const getTweets = async (handle: string) => {
   /**
    * example if we want to actually fetch tweets from twitter's api:
    *
@@ -43,7 +43,7 @@ const getTodos = async (handle: string) => {
 
 export default async function Tag({ params }: { params: { tag: string } }) {
   const currentHandle = params.tag;
-  const data = await getTodos(currentHandle);
+  const data = await getTweets(currentHandle);
 
   return (
     <div className="flex flex-col gap-4 px-6 py-6 lg:px-20">
